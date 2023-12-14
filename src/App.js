@@ -1,5 +1,5 @@
 import './App.css';
-import list from "./places-of-הובלות-בתל-אביב-יפו.json"
+import list from "./first.json"
 
 function App() {
   list.map((item) => {
@@ -15,7 +15,15 @@ function App() {
       const before = '972' + item.phone.replace("-", "");
       const phoneNumber2 = before.replace("-", "");
 
-      var text = "אהלן ערב טוב"
+      var text = `היי מה שלומך? 
+שמי ברק אני אמן גרפיטי ואשמח להציע לך ציור גרפיטי מותאם אישית לעסק - על המשאית שלך. 
+אם גם לך נמאס מהמדבקות המשעממות שאף אחד לא שם לב אליהן, אולי השירות יתאים לך
+הגרפיטי המותאם לעסק יהפוך את המשאית שלך לפרסומת ניידת, שבאמת עושה עבודה. 
+
+תוכל לראות עבודות באתר https://bit.ly/41oB3T9
+
+לפרטים נוספים תשאיר לי הודעה!
+      `
 
 
       var link = `https://api.whatsapp.com/send?phone=${phoneNumber2}&text=${text}&send=1`
