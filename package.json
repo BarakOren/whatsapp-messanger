@@ -1,5 +1,6 @@
 {
   "name": "json-to-whatsapp2",
+  "homepage": "http://BarakOren.github.io/whatsapp-sender",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
